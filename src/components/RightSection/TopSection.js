@@ -26,14 +26,22 @@ const TopSection = () => {
 export default TopSection;
 
 const Container = styled.section`
+  // Box
   width: 417px;
   color: #3A3A3A;
-  /* border: 1px solid red; */
+
+  // Animation
+  animation-name: ${({theme}) => theme.fadeInUp};
+  animation-delay: 200ms;
+  ${({theme}) => theme.commonFadeInProps};
 `
 
 const TextContainer = styled.div`
-  font-size: 2rem;
+  //Box
   margin-bottom: 20px;
   padding: 3px 0 4px 0;
+
+  // Font
+  font-size: 2rem;
   line-height: 25px;
 `

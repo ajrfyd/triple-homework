@@ -2,7 +2,8 @@
 
 > 
 ### 프로젝트 실행 방법
-- 
+[deploy]:https://triple-homework.vercel.app/
+
 ### 사용한 기술과 선택한 이유
 - styled-components
   1. style을 위해서 파일을 오갈 필요가 없습니다.

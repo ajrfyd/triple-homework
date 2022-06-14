@@ -1,9 +1,9 @@
 import React from "react";
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import logoSrc from '../../assets/triple2x.png';
 
+
 const LeftLogoSection = () => {
-  console.log(logoSrc)
 
 
   return (
@@ -14,6 +14,7 @@ const LeftLogoSection = () => {
 }
 
 export default LeftLogoSection;
+
 
 const Container = styled.div`
   // Box
@@ -37,4 +38,9 @@ const Container = styled.div`
   font-family: var(--font-normal);
   text-decoration: none solid var(--color-light);
   word-spacing: 0;
+
+  // Animation
+  animation-name: ${({theme}) => theme.fadeInUp};
+  animation-delay: 100ms;
+  ${({theme}) => theme.commonFadeInProps};
 `

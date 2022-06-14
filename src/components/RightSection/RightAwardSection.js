@@ -16,6 +16,7 @@ const RightAwardSection = () => {
 export default RightAwardSection;
 
 const Container = styled.div`
+  // Box
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

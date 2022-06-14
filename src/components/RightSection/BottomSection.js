@@ -1,7 +1,5 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import googleStore from '../../assets/play-store2x.png';
-import appleStore from '../../assets/badge-apple4x.png';
 import data from "../../utils/data";
 
 const BottomSection = () => {
@@ -31,7 +29,7 @@ const Container = styled.div`
 
 
 const StoreContainer = styled.div`
-  // background  
+  // Background  
   ${({ src }) => src && css`
     background-image: url(${src});
     background-position: 0% 0%;
@@ -39,15 +37,19 @@ const StoreContainer = styled.div`
     background-size: 45px 45px;
   `}
 
+  // Box
   flex: 1;
   align-self: right;
-  /* border: 1px solid red; */
   height: 54px;
-  /* margin: 2rem 0; */
   padding-left: 3.5rem;
 
-  // font
+  // Font
   font-weight: 700;
   font-size: 14px;
   color: var(--color-light);
+
+  // Animation
+  animation-name: ${({theme}) => theme.fadeInUp};
+  ${ ({theme}) => theme.commonFadeInProps};
+  animation-delay: 300ms;
 `

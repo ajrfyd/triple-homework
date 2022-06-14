@@ -1,16 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import LeftLogoSection from './components/LeftSection/LeftLogoSection';
 import RightAwardSection from './components/RightSection/RightAwardSection';
+import theme from './style/style';
+
+
 
 const App = () => {
   return (
-    <Container>
-      <SectionContainer>
-        <LeftLogoSection />
-        <RightAwardSection />
-      </SectionContainer>
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <SectionContainer>
+          <LeftLogoSection />
+          <RightAwardSection />
+        </SectionContainer>
+      </Container>
+    </ThemeProvider>
   );
 }
 
