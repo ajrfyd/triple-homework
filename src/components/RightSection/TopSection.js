@@ -1,6 +1,8 @@
+import { toBeInTheDOM } from "@testing-library/jest-dom/dist/matchers";
 import React from "react";
 import styled from "styled-components";
 import data from "../../utils/data";
+import CountUp from "../CountUp/CountUp";
 
 const TopSection = () => {
   
@@ -11,7 +13,7 @@ const TopSection = () => {
           <TextContainer key={item.id}>
             <strong>
               <span>
-                {item.amount}
+                <CountUp end={item.amount} time={2000}/>
               </span>
               {item.text1}
             </strong>

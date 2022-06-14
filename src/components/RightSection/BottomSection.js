@@ -51,5 +51,5 @@ const StoreContainer = styled.div`
   // Animation
   animation-name: ${({theme}) => theme.fadeInUp};
   ${ ({theme}) => theme.commonFadeInProps};
-  animation-delay: 300ms;
+  animation-delay: 400ms;
 `
