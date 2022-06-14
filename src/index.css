@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 1200px;
@@ -14,4 +14,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --color-light: rgba(58, 58, 58, .7);
+  --color-normal: rgba(58, 58, 58);
+  --font-normal: sans-serif;
 }
