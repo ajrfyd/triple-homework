@@ -2,7 +2,7 @@
 
 > 
 ### 프로젝트 실행 방법
-[deploy]:https://triple-homework.vercel.app/
+[deploy]:https://triple-homework.vercel.app
 
 ### 사용한 기술과 선택한 이유
 - styled-components
