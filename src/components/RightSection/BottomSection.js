@@ -4,8 +4,8 @@ import data from "../../utils/data";
 
 const BottomSection = () => {
   const { right } = data;
-  console.log(right);
 
+  
   return (
     <Container>
       {

@@ -13,7 +13,7 @@ const TopSection = () => {
           <TextContainer key={item.id}>
             <strong>
               <span>
-                <CountUp end={item.amount} time={2000}/>
+                <CountUp start={0} end={item.amount} time={2000}/>
               </span>
               {item.text1}
             </strong>
