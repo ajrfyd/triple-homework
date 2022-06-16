@@ -36,6 +36,15 @@ const Container = styled.section`
   animation-name: ${({theme}) => theme.fadeInUp};
   animation-delay: 200ms;
   ${({theme}) => theme.commonFadeInProps};
+
+  // media
+  @media (max-width: 1140px) {
+    font-size: 1rem;
+    width: 360px;
+    height: 80px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
 `
 
 const TextContainer = styled.div`
@@ -46,4 +55,12 @@ const TextContainer = styled.div`
   // Font
   font-size: 2rem;
   line-height: 25px;
+
+  // media
+  @media (max-width: 1140px) {
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
 `

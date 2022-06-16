@@ -3,11 +3,12 @@ import styled, { ThemeProvider } from 'styled-components';
 import LeftLogoSection from './components/LeftSection/LeftLogoSection';
 import RightAwardSection from './components/RightSection/RightAwardSection';
 import theme from './style/style';
-import CountUp from './components/CountUp/CountUp';
+import Button from './components/Botton/Button';
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
+      <Button clickEvent={() => window.location.replace('/')}>Refresh</Button>
       <Container>
         <SectionContainer>
           <LeftLogoSection />
@@ -39,4 +40,12 @@ const SectionContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   background-color: #fff;
+
+
+  // media
+  @media (max-width: 1140px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `

@@ -5,7 +5,7 @@ import data from "../../utils/data";
 const BottomSection = () => {
   const { right } = data;
 
-  
+
   return (
     <Container>
       {
@@ -25,6 +25,11 @@ export default BottomSection;
 const Container = styled.div`
   width: 417px;
   display: flex;
+
+  @media (max-width: 1140px) {
+    width: 300px;
+    height: 47px;
+  }
 `
 
 
@@ -39,7 +44,6 @@ const StoreContainer = styled.div`
 
   // Box
   flex: 1;
-  align-self: right;
   height: 54px;
   padding-left: 3.5rem;
 
@@ -52,4 +56,12 @@ const StoreContainer = styled.div`
   animation-name: ${({theme}) => theme.fadeInUp};
   ${ ({theme}) => theme.commonFadeInProps};
   animation-delay: 400ms;
+
+  // media
+  @media (max-width: 1140px) {
+    font-size: 10px;
+    background-size: 35px 35px;
+    line-height: 15px;
+    padding-left: 2.5rem;
+  }
 `

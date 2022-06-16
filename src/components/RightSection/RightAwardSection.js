@@ -21,4 +21,10 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   padding: 4rem 0;
+
+  // media
+  @media (max-width: 1140px) {
+    padding: 0%;
+    margin-top: 1rem;
+  }
 `

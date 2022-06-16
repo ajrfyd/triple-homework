@@ -43,4 +43,16 @@ const Container = styled.div`
   animation-name: ${({theme}) => theme.fadeInUp};
   animation-delay: 100ms;
   ${({theme}) => theme.commonFadeInProps};
+
+
+  // media
+  @media (max-width: 1140px) {
+    width: 200px;
+    height: 169px;
+    background-position: 0% 0%;
+    background-size: 200px;
+    padding: 140px 0 0 0 ;    
+    font-size: 10px;
+    line-height: 10px;
+  }
 `
