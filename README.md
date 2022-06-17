@@ -3,6 +3,7 @@
 > 
 ### 프로젝트 실행 방법
 [deploy](https://triple-homework.vercel.app)
+<br/>
 [TypeScript&lintVer.](https://github.com/ajrfyd/triple-homework-ver-type)
 
 ### 사용한 기술과 선택한 이유
