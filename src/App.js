@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import LeftLogoSection from './components/LeftSection/LeftLogoSection';
 import RightAwardSection from './components/RightSection/RightAwardSection';
 import theme from './style/style';
-import Button from './components/Botton/Button';
+import Button from './components/Button/Button';
 
 const App = () => {
   return (
